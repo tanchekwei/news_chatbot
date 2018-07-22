@@ -1,0 +1,157 @@
+body {
+    font-family: "Segoe UI";
+    background-color: white;
+}
+
+img.bgi{
+}
+
+div.wholeChatbox{
+    max-width: 40%;
+    margin: auto;
+}
+
+div {
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*display: block;*/
+    /*position: absolute;*/
+}
+
+div::after {
+    content: "";
+    background: url("bgi1.jpg");
+    opacity: 0.02;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 60px;
+}
+
+#userInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 60px;
+}
+
+#textInput {
+    width: 90%;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #005db2;
+    font-family: monospace;
+    font-size: 17px;
+    background-color: #fbfbfb;
+}
+
+#textInput:focus{
+    outline:none;
+}
+
+#buttonInput {
+    padding: 3px;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.userText {
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: right;
+    line-height: 30px;
+}
+
+
+.botText {
+    color: black;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: left;
+    line-height: 30px;
+}
+
+
+#tidbit {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 300px;
+}
+
+.button {
+    position: relative;
+    background-color: #0077E5;
+    border: none;
+    color: #FFFFFF;
+    width: 9%;
+    height: 30px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button:after {
+    content: "";
+    background: #0069d0;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.botText span {
+    background-color: #F1F0F0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.botText span:hover {
+    background-color: #E5E4E4;
+}
+
+.userText span {
+    background-color: #0084FF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.userText span:hover {
+    background-color: #0077E5;
+}
+
+
+/*div.botDiv{*/
+    /*background-color: #EF5350;*/
+    /*padding: 10px;*/
+    /*border-radius: 2px;*/
+/*}*/
+
+
+/*div.botDiv {*/
+    /*background-color: azure;*/
+/*}*/
